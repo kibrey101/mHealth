@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>mHealth JQM</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="http://fonts.googleapis.com/css?family=Akronim" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Alef" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Wallpoet" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="css/pageStyle.css"/>
+	<link rel="stylesheet" type="text/css" href="css/divStyle.css"/>
+	<link rel="stylesheet" type="text/css" href="css/itemsStyle.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.4.css">
+	<script  src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery.mobile-1.4.4.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script  src="js/proQuery.js"></script>
+</head>
+<body>
+
+<div data-role="page" data-theme="a" id="homePage" class="homePage main-page">
+	<div data-role="header"  data-id="persBar">
+		<h1>mHealth</h1>
+	</div>
+	<div data-role="main" class="ui-content mainMenu" id="mainMenu">
+		<ul class="itemsContainer" id="itemsContainer">
+			<li><a href="#patient" class="patientItem" id="patientItem" data-transition="slide"><i class="fa fa-user-md fa-3x"></i></a></li>
+			<li><a href="#health" class="healthItem" id="healthItem" data-transition="slide"><i class="fa fa-h-square fa-3x"></i></a></li>
+			<li><a href="#reporting" class="reportingItem" id="reportingItem" data-transition="slide"><i class="fa fa-file-text-o fa-3x"></i></a></li>
+			<li><a href="#services" class="servicesItem" id="servicesItem" data-transition="slide"><i class="fa fa-gears fa-3x"></i></a></li>
+		</ul>
+	</div>
+</div>
+
+
+
+<div data-role="page" class="patient main-page" id="patient">
+	<div data-role="header"data-position="fixed" data-theme="b"  data-id="persBar">
+    	<a href="#homePage" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-notext" data-transition="slide" data-direction="reverse">Back</a>
+    	<h1>select patients</h1>
+    </div>
+
+  <div data-role="main">
+  	<form>
+      <input data-type="search" id="filterCollapsibles" placeholder="search patient...">
+    </form>
+    <div data-role="collapsible-set" data-inset="true" id="patientsList" class="patientsList"data-collapsed-icon="arrow-d" 
+        data-expanded-icon="arrow-u">
+        <div data-role="collapsible">
+            <h2>Brian M. Ballantyne</h2>
+            <div>
+              <h4>Social sec No:251252-811C</h4>
+              <h4>Mobile:046 582 1534</h4>
+              <h4>Room no:12</h4>
+              <h4>Age:32</h4>        
+            </div>
+            <a href="#myPatients" data-role="button" data-inline="true" class="selectButton" data-transition="slide">ok</a>
+        </div>
+        <div data-role="collapsible">
+            <h2>Toini Kantee</h2>
+            <div>
+                 <h4>Social sec No:221137-413X</h4>
+                 <h4>Mobile:042 327 4292</h4>
+                <h4>Room no:22</h4>
+                <h4>Age:54</h4>
+            </div>
+            <a href="#myPatients" data-role="button" data-inline="true" class="selectButton" data-transition="slide">ok</a>
+        </div>
+        <div data-role="collapsible">
+            <h2>Hugo Öhman</h2>
+            <div>
+                 <h4>Social sec No:221137-413X</h4>
+                 <h4>Mobile:042 327 4292</h4>
+                <h4>Room no:22</h4>
+                <h4>Age:54</h4>
+            </div>
+            <a href="#myPatients" data-role="button" data-inline="true" class="selectButton" data-transition="slide">ok</a>
+        </div>
+        <div data-role="collapsible">
+            <h2>Susanna Ollila</h2>
+            <div>
+                 <h4>Social sec No:221137-413X</h4>
+                 <h4>Mobile:042 327 4292</h4>
+                <h4>Room no:22</h4>
+                <h4>Age:54</h4>
+            </div>
+            <a href="#myPatients" data-role="button" data-inline="true" class="selectButton" data-transition="slide">ok</a>
+        </div>
+        <div data-role="collapsible">
+            <h2>Stefan Tuominen</h2>
+            <div>
+                 <h4>Social sec No:221137-413X</h4>
+                 <h4>Mobile:042 327 4292</h4>
+                <h4>Room no:22</h4>
+                <h4>Age:54</h4>
+            </div>
+            <a href="#myPatients" data-role="button" data-inline="true" class="selectButton" data-transition="slide">ok</a>
+        </div>
+        <div data-role="collapsible">
+            <h2>Juhana Immonen</h2>
+            <div>
+                 <h4>Social sec No:221137-413X</h4>
+                 <h4>Mobile:042 327 4292</h4>
+                <h4>Room no:22</h4>
+                <h4>Age:54</h4>
+            </div>
+            <a href="#myPatients" data-role="button" data-inline="true" class="selectButton" data-transition="slide">ok</a>
+        </div>
+        <div data-role="collapsible">
+            <h2>Aili Lasilla</h2>
+            <div>
+                 <h4>Social sec No:221137-413X</h4>
+                 <h4>Mobile:042 327 4292</h4>
+                <h4>Room no:22</h4>
+                <h4>Age:54</h4>
+            </div>
+            <a href="#myPatients" data-role="button" data-inline="true" class="selectButton" data-transition="slide">ok</a>
+        </div>
+        <div data-role="collapsible">
+            <h2>Henna Tuomala</h2>
+            <div>
+                 <h4>Social sec No:221137-413X</h4>
+                 <h4>Mobile:042 327 4292</h4>
+                <h4>Room no:22</h4>
+                <h4>Age:54</h4>
+            </div>
+            <a href="#myPatients" data-role="button" data-inline="true" class="selectButton" data-transition="slide">ok</a>
+        </div>
+        <div data-role="collapsible">
+            <h2>Jutta Kivinen</h2>
+            <div>
+                 <h4>Social sec No:221137-413X</h4>
+                 <h4>Mobile:042 327 4292</h4>
+                <h4>Room no:22</h4>
+                <h4>Age:54</h4>
+            </div>
+            <a href="#myPatients" data-role="button" data-inline="true" class="selectButton" data-transition="slide">ok</a>
+        </div>
+        <div data-role="collapsible">
+            <h2>Brian M. Ballantyne</h2>
+            <div>
+              <h4>Social sec No:251252-811C</h4>
+              <h4>Mobile:046 582 1534</h4>
+              <h4>Room no:12</h4>
+              <h4>Age:32</h4>                  
+            </div>
+            <a href="#myPatients" data-role="button" data-inline="true" class="selectButton" data-transition="slide">ok</a>
+        </div>
+        <div data-role="collapsible">
+            <h2>Toini Kantee</h2>
+            <div>
+                 <h4>Social sec No:221137-413X</h4>
+                 <h4>Mobile:042 327 4292</h4>
+                <h4>Room no:22</h4>
+                <h4>Age:54</h4>
+            </div>
+            <a href="#myPatients" data-role="button" data-inline="true" class="selectButton" data-transition="slide">ok</a>
+        </div>
+        <div data-role="collapsible">
+            <h2>Hugo Öhman</h2>
+            <div>
+                 <h4>Social sec No:221137-413X</h4>
+                 <h4>Mobile:042 327 4292</h4>
+                <h4>Room no:22</h4>
+                <h4>Age:54</h4>
+            </div>
+            <a href="#myPatients" data-role="button" data-inline="true" class="selectButton" data-transition="slide">ok</a>
+        </div>
+        <div data-role="collapsible">
+            <h2>Susanna Ollila</h2>
+            <div>
+                 <h4>Social sec No:221137-413X</h4>
+                 <h4>Mobile:042 327 4292</h4>
+                <h4>Room no:22</h4>
+                <h4>Age:54</h4>
+            </div>
+            <a href="#myPatients" data-role="button" data-inline="true" class="selectButton" data-transition="slide">ok</a>
+        </div>
+        <div data-role="collapsible">
+            <h2>Stefan Tuominen</h2>
+            <div>
+                 <h4>Social sec No:221137-413X</h4>
+                 <h4>Mobile:042 327 4292</h4>
+                <h4>Room no:22</h4>
+                <h4>Age:54</h4>
+            </div>
+            <a href="#myPatients" data-role="button" data-inline="true"  class="selectButton" data-transition="slide">ok</a>
+        </div>
+    </div>
+    	
+  </div>
+  <div data-role="footer" data-position="fixed" data-theme="b" class="patientFooter" id="patientFooter"style="position:fixed;" data-id="persBar">
+    	<div data-role="navbar" id="footerNav" class="footerNav">
+	      <ul>
+	        <li><a href="#patient"class="ui-btn-active ui-state-persist"><i class="fa fa-user-md fa-1x"></i></a></li>
+	        <li><a href="#health"><i class="fa fa-h-square fa-1x"></i></a></li>
+	        <li><a href="#reporting"><i class="fa fa-file-text-o fa-1x"></i></a></li>
+	        <li><a href="#services"><i class="fa fa-gears fa-1x"></i></a></li>
+	        <li><a href="#sos"id="sos"><i class="fa fa-bell-o fa-1x"></i></a></li>
+	      </ul>
+  		</div>
+  	</div>
+</div>
+
+<div data-role="page" class="health main-page" id="health">
+	<div data-role="header"data-position="fixed" data-theme="b"  data-id="persBar">
+    	<a href="#homePage" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-notext"data-transition="slide" data-direction="reverse">Back</a>
+    	<h1>Health</h1>
+    </div>
+    <div data-role="main">
+    	
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="b" class="healthFooter" id="healthFooter" style="position:fixed;" data-id="persBar">
+    	<div data-role="navbar"id="footerNav" class="footerNav">
+	      <ul>
+	        <li><a href="#patient"><i class="fa fa-user-md fa-1x"></i></a></li>
+	        <li><a href="#health" class="ui-btn-active ui-state-persist"><i class="fa fa-h-square fa-1x"></i></a></li>
+	        <li><a href="#reporting"><i class="fa fa-file-text-o fa-1x"></i></a></li>
+	        <li><a href="#services"><i class="fa fa-gears fa-1x"></i></a></li>
+	        <li><a href="#sos"id="sos"><i class="fa fa-bell-o fa-1x"></i></a></li>
+	      </ul>
+  		</div>
+  	</div>
+</div>
+
+
+<div data-role="page" class="reporting main-page" id="reporting">
+	<div data-role="header"data-position="fixed" data-theme="b"  data-id="persBar">
+    	<a href="#homePage" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-notext"data-transition="slide" data-direction="reverse">Back</a>
+    	<h1>Reporting</h1>
+    </div>
+    <div data-role="main">
+    	
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="b" class="reportingFooter" id="reportingFooter" style="position:fixed;" data-id="persBar">
+    	<div data-role="navbar"id="footerNav" class="footerNav">
+	      <ul>
+	        <li><a href="#patient"><i class="fa fa-user-md fa-1x"></i></a></li>
+	        <li><a href="#health"><i class="fa fa-h-square fa-1x"></i></a></li>
+	        <li><a href="#reporting"class="ui-btn-active ui-state-persist"><i class="fa fa-file-text-o fa-1x"></i></a></li>
+	        <li><a href="#services"><i class="fa fa-gears fa-1x"></i></a></li>
+	        <li><a href="#sos"id="sos"><i class="fa fa-bell-o fa-1x"></i></a></li>
+	      </ul>
+  		</div>
+  	</div>
+</div>
+
+<div data-role="page" class="services main-page" id="services">
+	<div data-role="header"data-position="fixed" data-theme="b"  data-id="persBar">
+    	<a href="#homePage" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-notext"data-transition="slide" data-direction="reverse">Back</a>
+    	<h1>Services</h1>
+    </div>
+    <div data-role="main">
+    	
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="b" class="servicesFooter" id="servicesFooter" style="position:fixed;" data-id="persBar">
+    	<div data-role="navbar"id="footerNav" class="footerNav">
+	      <ul>
+	      	<li><a href="#patient"><i class="fa fa-user-md fa-1x"></i></a></li>
+	        <li><a href="#health"><i class="fa fa-h-square fa-1x"></i></a></li>
+	        <li><a href="#reporting"><i class="fa fa-file-text-o fa-1x"></i></a></li>
+	        <li><a href="#services" class="ui-btn-active ui-state-persist"><i class="fa fa-gears fa-1x"></i></a></li>
+	        <li><a href="#sos" id="sos"><i class="fa fa-bell-o fa-1x"></i></a></li>
+	      </ul>
+  		</div>
+  	</div>
+</div>
+
+
+<div data-role="page" class="sos" id="sosMain">
+	<div data-role="header"data-position="fixed" data-theme="b"  data-id="persBar">
+    	<a href="#homePage" class="ui-btn ui-corner-all ui-shadow ui-icon-arrow-l ui-btn-icon-notext"data-transition="slide" data-direction="reverse">Back</a>
+    	<h1>SOS</h1>
+    </div>
+    <div data-role="main">
+    	
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="b" class="sosFooter" id="sosFooter" style="position:fixed;" data-id="persBar">
+    	<div data-role="navbar"id="footerNav" class="footerNav">
+	      <ul>
+	      	<li><a href="#patient"><i class="fa fa-user-md fa-1x"></i></a></li>
+	        <li><a href="#health"><i class="fa fa-h-square fa-1x"></i></a></li>
+	        <li><a href="#reporting"><i class="fa fa-file-text-o fa-1x"></i></a></li>
+	        <li><a href="#services" ><i class="fa fa-gears fa-1x"></i></a></li>
+	        <li><a href="#sos" class="ui-btn-active ui-state-persist"id="sos"><i class="fa fa-bell-o fa-1x"></i></a></li>
+	      </ul>
+  		</div>
+  	</div>
+</div>
+
+<div data-role="page" id="detailedInfo" data-dialog="true">
+	<div data-role="header"data-position="fixed" data-theme="b"  data-id="persBar">
+    	<h1>Detailed Info</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+    	<h5>Patient's Name:</h5>
+    	<h5>Gender:</h5>
+    	<h5>Mobile no:</h5>
+    	<h5>Address:</h5>
+    	<h5>City:</h5>
+    	<br>
+    	<h5>Beneficiary's Name:</h5>
+    	<h5>Relationship:</h5>
+    	<h5>Gender:</h5>
+    	<h5>Mobile no:</h5>
+    	<h5>City:</h5>
+    	<h5>Address:</h5>
+    	
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="c" style="position:fixed;">
+    	
+  	</div>
+   
+</div>
+
+<div data-role="page" class="calendar" id="calendar">
+	<div data-role="header"data-position="fixed" data-theme="b"  data-id="persBar">
+    	<a href="#myPatients" class="ui-btn ui-corner-all ui-shadow ui-icon-arrow-l ui-btn-icon-notext"data-transition="slide"data-direction="reverse" >Back</a>
+    	<h1>Calendar</h1>
+    </div>
+    <div data-role="panel" id="activitiesPage"> 
+    <h2>Activities</h2>
+    <p>Phone number: 773-528-7483</p>
+    <p>Address: 121 N. LaSalle Street
+    <br>Chicago, Illinois 60602 USA</p>
+    <p>Email: thebestadelepitt@gmail.com</p>
+    <a href="#calendar" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  </div> 
+  <div data-role="panel" id="Dischargments"> 
+    <h2>Dischargments</h2>
+    <p>Phone number: 773-528-7483</p>
+    <p>Address: 121 N. LaSalle Street
+    <br>Chicago, Illinois 60602 USA</p>
+    <p>Email: thebestadelepitt@gmail.com</p>
+    <a href="#calendar" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  </div> 
+  <div data-role="panel" id="dischargments"> 
+    <h2>Dischargments</h2>
+    <p>Phone number: 773-528-7483</p>
+    <p>Address: 121 N. LaSalle Street
+    <br>Chicago, Illinois 60602 USA</p>
+    <p>Email: thebestadelepitt@gmail.com</p>
+    <a href="#calendar" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  </div> 
+  <div data-role="panel" id="laboratory"> 
+    <h2>Laboratory</h2>
+    <p>Phone number: 773-528-7483</p>
+    <p>Address: 121 N. LaSalle Street
+    <br>Chicago, Illinois 60602 USA</p>
+    <p>Email: thebestadelepitt@gmail.com</p>
+    <a href="#calendar" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  </div> 
+  <div data-role="panel" id="nutrition"> 
+    <h2>Nutrition</h2>
+    <p>Phone number: 773-528-7483</p>
+    <p>Address: 121 N. LaSalle Street
+    <br>Chicago, Illinois 60602 USA</p>
+    <p>Email: thebestadelepitt@gmail.com</p>
+    <a href="#calendar" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  </div> 
+  <div data-role="panel" id="notification"> 
+    <h2>Notification</h2>
+    <p>Phone number: 773-528-7483</p>
+    <p>Address: 121 N. LaSalle Street
+    <br>Chicago, Illinois 60602 USA</p>
+    <p>Email: thebestadelepitt@gmail.com</p>
+    <a href="#calendar" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  </div> 
+  <div data-role="panel" id="caring-activities"> 
+    <h2>Caring activities</h2>
+    <p>Phone number: 773-528-7483</p>
+    <p>Address: 121 N. LaSalle Street
+    <br>Chicago, Illinois 60602 USA</p>
+    <p>Email: thebestadelepitt@gmail.com</p>
+    <a href="#calendar" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  </div> 
+  <div data-role="panel" id="examination"> 
+    <h2>Physical examinations</h2>
+    <p>Phone number: 773-528-7483</p>
+    <p>Address: 121 N. LaSalle Street
+    <br>Chicago, Illinois 60602 USA</p>
+    <p>Email: thebestadelepitt@gmail.com</p>
+    <a href="#calendar" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  </div> 
+    <div data-role="main" class="ui-content calendar-content" id="calendar-content">
+        <ul  data-role="listview" data-icon="arrow-l" iconpos="left" id="calendarUl">
+            <li><a href="#activitiesPage" class="" id=""> Activities</a></li>
+            <li><a href="#dischargments" class="" id="">Dischargments</a>
+                <!-- <ul data-role="listview">
+                    <li><a href="#activities" class="" id=""> Defecation</a></li>
+                    <li><a href="#dischargements" class="" id="">Nausea</a></li>
+                    <li><a href="#laboratory" class="" id="">Urine(ml)</a></li>
+                    <li><a href="#nutrition" class="" id="">Catheter/Cystofix</a></li>
+                </ul> -->
+            </li>
+            <li><a href="#laboratory" class="" id="">Laboratory</a></li>
+            <li><a href="#nutrition" class="" id="">Nutrition</a>
+                <!-- <ul class="" id="">
+                    <li><a href="#activities" class="" id="">Nosagastric tube/PEG</a></li>
+                    <li><a href="#dischargements" class="" id="">Dining</a></li>
+                </ul> -->
+            </li>
+            <li><a href="#notification" class="" id="">Notification</a></li>
+            <li><a href="#caring-activities" class="" id="">Caring activities</a></li>
+            <li><a href="#examination" class="" id="">Physical examinations</a></li>
+        </ul>
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="b" class="calendarFooter" id="calendarFooter" style="position:fixed;" data-id="persBar">
+    	<div data-role="navbar"id="footerNav" class="footerNav">
+	      <ul>
+	        <li><a href="#patient"><i class="fa fa-user-md fa-1x"></i></a></li>
+	        <li><a href="#health"><i class="fa fa-h-square fa-1x"></i></a></li>
+	        <li><a href="#reporting"><i class="fa fa-file-text-o fa-1x"></i></a></li>
+	        <li><a href="#services" ><i class="fa fa-gears fa-1x"></i></a></li>
+	        <li><a href="#sos" id="sos"><i class="fa fa-bell-o fa-1x"></i></a></li>
+	      </ul>
+  		</div>
+  	</div>
+</div>
+<div data-role="page" class="prescription" id="prescription">
+	<div data-role="header"data-position="fixed" data-theme="b"  data-id="persBar">
+    	<a href="#myPatients" class="ui-btn ui-corner-all ui-shadow ui-icon-arrow-l ui-btn-icon-notext">Back</a>
+    	<h1>Prescription</h1>
+    </div>
+    <div data-role="main">
+    	
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="b" class="calendarFooter" id="calendarFooter" style="position:fixed;" data-id="persBar">
+    	<div data-role="navbar"id="footerNav" class="footerNav">
+	      <ul>
+	        <li><a href="#patient"><i class="fa fa-user-md fa-1x"></i></a></li>
+	        <li><a href="#health"><i class="fa fa-h-square fa-1x"></i></a></li>
+	        <li><a href="#reporting"><i class="fa fa-file-text-o fa-1x"></i></a></li>
+	        <li><a href="#services" ><i class="fa fa-gears fa-1x"></i></a></li>
+	        <li><a href="#sos" id="sos"><i class="fa fa-bell-o fa-1x"></i></a></li>
+	      </ul>
+  		</div>
+  	</div>
+</div>
+
+<div data-role="page" class="docVisit " id="docVisit">
+	<div data-role="header"data-position="fixed" data-theme="b"  data-id="persBar">
+    	<a href="#myPatients" class="ui-btn ui-corner-all ui-shadow ui-icon-arrow-l ui-btn-icon-notext">Back</a>
+    	<h1>Doctor's visit</h1>
+    </div>
+    <div data-role="main">
+    	
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="b" class="calendarFooter" id="calendarFooter" style="position:fixed;" data-id="persBar">
+    	<div data-role="navbar"id="footerNav" class="footerNav">
+	      <ul>
+	        <li><a href="#patient"><i class="fa fa-user-md fa-1x"></i></a></li>
+	        <li><a href="#health"><i class="fa fa-h-square fa-1x"></i></a></li>
+	        <li><a href="#reporting"><i class="fa fa-file-text-o fa-1x"></i></a></li>
+	        <li><a href="#services" ><i class="fa fa-gears fa-1x"></i></a></li>
+	        <li><a href="#sos"id="sos"><i class="fa fa-bell-o fa-1x"></i></a></li>
+	      </ul>
+  		</div>
+  	</div>
+</div>
+
+<div data-role="page" class="carePage" id="carePage">
+	<div data-role="header"data-position="fixed" data-theme="b"  data-id="persBar">
+    	<a href="#myPatients" class="ui-btn ui-corner-all ui-shadow ui-icon-arrow-l ui-btn-icon-notext">Back</a>
+    	<h1>Care page</h1>
+    </div>
+    <div data-role="main">
+    	
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="b" class="calendarFooter" id="calendarFooter" style="position:fixed;" data-id="persBar">
+    	<div data-role="navbar"id="footerNav" class="footerNav">
+	      <ul>
+	        <li><a href="#patient"><i class="fa fa-user-md fa-1x"></i></a></li>
+	        <li><a href="#health"><i class="fa fa-h-square fa-1x"></i></a></li>
+	        <li><a href="#reporting"><i class="fa fa-file-text-o fa-1x"></i></a></li>
+	        <li><a href="#services" ><i class="fa fa-gears fa-1x"></i></a></li>
+	        <li><a href="#sos"id="sos"><i class="fa fa-bell-o fa-1x"></i></a></li>
+	      </ul>
+  		</div>
+  	</div>
+</div>
+
+<div data-role="page" class="medicalHistory" id="medicalHistory">
+	<div data-role="header"data-position="fixed" data-theme="b"  data-id="persBar">
+    	<a href="#myPatients" class="ui-btn ui-corner-all ui-shadow ui-icon-arrow-l ui-btn-icon-notext">Back</a>
+    	<h1>Medical history</h1>
+    </div>
+    <div data-role="main">
+    	
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="b" class="calendarFooter" id="calendarFooter" style="position:fixed;" data-id="persBar">
+    	<div data-role="navbar"id="footerNav" class="footerNav">
+	      <ul>
+	        <li><a href="#patient"><i class="fa fa-user-md fa-1x"></i></a></li>
+	        <li><a href="#health"><i class="fa fa-h-square fa-1x"></i></a></li>
+	        <li><a href="#reporting"><i class="fa fa-file-text-o fa-1x"></i></a></li>
+	        <li><a href="#services"><i class="fa fa-gears fa-1x"></i></a></li>
+	        <li><a href="#sos"id="sos"><i class="fa fa-bell-o fa-1x"></i></a></li>
+	      </ul>
+  		</div>
+  	</div>
+</div>
+
+<div data-role="page" class="myPatients" id="myPatients">
+	<div data-role="header"data-position="fixed" data-theme="b"  data-id="persBar">
+    	<a href="#patient" class="ui-btn ui-corner-all ui-shadow ui-icon-arrow-l ui-btn-icon-notext"data-transition="slide" data-direction="reverse">Back</a>
+    	<h1>myPatients</h1>
+    	<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-notext">Search</a>
+    </div>
+    <div data-role="main" id="">
+    	<div class="selectedDiv" id="selectedDiv">
+    		<div class="navArrow" id="prevArrow"></div>
+    		<ul class="selectedList" id="selectedList">
+    			<li>Brian M. Ballantyne
+    				<p>Room no:11</p>
+    				<p>Gender:Male</p>
+                    <p>Diagnosis:</p>
+                    <p>Social sec no:</p>
+    			</li>
+    			<li>Toini Kantee
+    				<p>Room no:12</p>
+    				<p>Gender:Male</p>
+                    <p>Diagnosis:</p>
+                    <p>Social sec no:</p>
+    			</li>
+    			<li>Stefan Tuominen
+    				<p>Room no:8</p>
+    				<p>Gender:Male</p>
+                    <p>Diagnosis:</p>
+                    <p>Social sec no:</p>
+    			</li>
+    			<li>Riikka Venalainen
+    				<p>Room no:7</p>
+    				<p>Gender:Female</p>
+                    <p>Diagnosis:</p>
+                    <p>Social sec no:</p>
+    			</li>
+    			<li>Petteri Jaskelainen
+    				<p>Room no:67</p>
+    				<p>Gender:Female</p>
+                    <p>Diagnosis:</p>
+                    <p>Social sec no:</p>
+    			</li>
+    		</ul>
+    		<div class="navArrow" id="nextArrow"></div>
+    	</div>
+    	<div class="optionsDiv" id="optionsDiv">
+    		<ul class="optionsMenu" id="optionsMenu">
+    			<!-- <li><a href="#detailedInfo" data-transition="flip">Detailed Info</a></li> -->
+    			<li><a href="#prescription"><i class="fa fa-pencil-square-o fa-2x optionsIcon" id="myId"></i><p>Prescription</p></a></li>
+    			<li><a href="#docVisit"><i class="fa fa-stethoscope fa-2x optionsIcon"></i><p>Doctor's Visit</p></a></li>
+                <li id="calendarList"><a href="#" ><i class="fa fa-calendar fa-2x fa-align-left"></i><p>Calendar</p></a>
+                     <table  id="todoTable">
+                        <thead>
+                            <tr id="tableHeader">
+                              <td>Time</td>
+                              <td>Task</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td>8.20-9.15</td>
+                              <td>Check medicine side-effect<br>doc sebastian</td>
+                            </tr>
+                            <tr>
+                              <td>12.00-13.00</td>
+                              <td>Check BP<br>Elena Matzi</td>
+                            </tr>
+                            <tr>
+                              <td>18.20-19.15</td>
+                              <td>Take a walk<br>Rita Ora</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#calendar" data-role="button" id="calendarButton" data-transition="slide">Goto calendar</a>
+                </li>
+    			<li><a href="#carePage"><i class="fa fa-wheelchair fa-2x optionsIcon"></i><p>Care Page</p></a></li>
+    			<li><a href="#medicalHistory"><i class="fa fa-flask fa-2x optionsIcon"></i><p>Measurements</p></a></li>
+    		</ul>
+
+    	</div>
+        <!-- <div data-role="popup" id="calendarPopup"data-overlay-theme="b" data-theme="b">
+            <div data-role="header">
+            <a href="#" data-icon="delete" data-rel="back" data-transition="slide" data-iconpos="notext"></a>
+                <h2>todo list</h2>
+            </div>
+            <div data-role="main">
+                <table data-role="table" class="ui-responsive">
+                    <thead>
+                        <tr>
+                          
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>8.20-9.15</td>
+                          <td>Check medicine sideeffect<br>doc sebastian</td>
+                        </tr>
+                        <tr>
+                          <td>12.00-13.00</td>
+                          <td>Check BP<br>Elena Matzi</td>
+                        </tr>
+                        <tr>
+                          <td>18.20-19.15</td>
+                          <td>Take a walk<br>Rita Ora</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#calendar" data-role="button" data-inline="true" id="popupButton" data-transition="slide">Go to calendar page</a>
+            </div>
+        </div> -->
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="b" class="myPatientsFooter" id="myPatientsFooter" style="position:fixed;" data-id="persBar">
+    	<div data-role="navbar"id="footerNav" class="footerNav">
+	      <ul>
+	        <li><a href="#patient"><i class="fa fa-user-md fa-1x"></i></a></li>
+	        <li><a href="#health"><i class="fa fa-h-square fa-1x"></i></a></li>
+	        <li><a href="#reporting"><i class="fa fa-file-text-o fa-1x"></i></a></li>
+	        <li><a href="#services"><i class="fa fa-gears fa-1x"></i></a></li>
+	        <li><a href="#sos"id="sos"><i class="fa fa-bell-o fa-1x"></i></a></li>
+	      </ul>
+  		</div>
+  	</div>
+</div>
+
+<div data-role="page" id="splashScreen">
+	<div data-role="main" id="splashDiv">
+		<h2>Welcome to mHealth</h2>
+		<p>hospital info management</p>
+		<p class="loading">page loading...</p>
+	</div>
+</div>
+</body>
+</html>
